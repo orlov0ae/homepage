@@ -244,16 +244,83 @@ body {
     color: var(--secondary-text-color);
 }
 
-.additional-info__languages {
+.additional-info__languages,
+.additional-info__certificates {
     margin-bottom: 20px;
 }
 
-.additional-info__languages-header {
+.additional-info__languages-header,
+.additional-info__certificates-header {
     color: var(--secondary-text-color);
     text-align: left;
     margin-bottom: 20px;
 }
 
-.additional-info__languages-item {
+.additional-info__languages-item,
+.additional-info__certificates-item {
+    color: var(--secondary-text-color);
+}
+
+.contact-info__item:hover {
+    color: var(--text-decoration-color);
+    transition: color 0.3s ease;
+}
+
+.contact-info__item-icon path {
+    transition: fill 0.3s ease;
+}
+.contact-info__item:hover .contact-info__item-icon path {
+    fill: var(--text-decoration-color);
+}
+.download-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.download-btn {
+    background-color: #ff9a00;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #e68900;
+}
+
+/* Футер */
+.footer {
+    margin-top: 60px;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer__contacts {
+    margin-bottom: 10px;
+}
+
+.footer__icon {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer__icon img {
+    width: 24px;
+    height: 24px;
+    filter: grayscale(1);
+    transition: filter 0.3s ease;
+}
+
+.footer__icon img:hover {
+    filter: grayscale(0);
+}
+
+.footer__copyright {
+    font-size: 14px;
     color: var(--secondary-text-color);
 }
